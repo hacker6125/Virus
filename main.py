@@ -87,18 +87,5 @@ def file_replicator(count):
 	for file in py_files:
 		os.system(f"python {file}")
 
-
-def c_version(fd):
-    with open(fd, "w") as f:
-        f.write("""
-#include <stdio.h>
-int main(){
-    printf(\"hello\");
-}
-        """)
-
 if __name__ == "__main__":
-    # file_replicator(1)
-	# print(list(string.ascii_letters))
-	# main()
-    c_version("data.c")
+    main()
